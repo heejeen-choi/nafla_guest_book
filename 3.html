@@ -1,29 +1,29 @@
 <html>
 <head>
-  <title>WEB - 파리의 우울</title>
+  <title>WEB - Le spleen de paris</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1><a href="index.html">POEM</a></h1>
-  <div id="grid">
-    <ol>
-      <li><a href="1.html">보들레르</a></li>
-      <li><a href="2.html">악의꽃</a></li>
-      <li><a href="3.html">파리의 우울</a></li>
-    </ol>
-    <div id="article">
-      <h2>파리의 우울</h2>
-      <p>
-          ˝언제나 취해 있어야 한다. 모든 것이 거기에 있다. 그것이 유일한 문제다.˝ - 데이지
-      열린 창문을 통해 밖에서 바라보는 사람은 결코 닫힌 창을 바라보는 사람만큼 많은 것을 보지 못한다. 한 자루 촛불로 밝혀진 창보다 더 그윽하고, 더 신비롭고, 더 풍요롭고, 더 컴컴하고, 더 눈부신 것은 없다. 태양 아래서 볼 수 있는 것은 언제나 한 장의 유리창 뒤에서 일어나는 것만큼 흥미롭지 않다. 이 어둡거나 밝은 구멍 속에... 
-      이제 취할 시간이다!
-      ‘시간‘의 학대받는 노예가 되지 않기 위해서는
-      끊임없이 취해라!
-      술이든, 시든, 덕이든 무엇이든,
-      당신 마음대로
-      </p>
-    </div>
-  </div>
+    <input id="night_day" type="button" value="night" onclick="
+      if(document.querySelector('#night_day').value === 'night'){
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        document.querySelector('#night_day').value = 'day';
+      } else {
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        document.querySelector('#night_day').value = 'night';
+      }
+    ">
+  <ol>
+    <li><a href="1.html">Baudelaire</a></li>
+    <li><a href="2.html">Les Fleurs du mal</a></li>
+    <li><a href="3.html">Le spleen de paris</a></li>
+  </ol>
+  <h2>Le spleen de paris</h2>
+  <p>
+    My dear friend, I send you here a little work of which no one could say that it has neither head nor tail, because, on the contrary, everything in it is both head and tail, alternately and reciprocally. Please consider what fine advantages this combination offers to all of us, to you, to me, and to the reader. We can cut whatever we like—me, my reverie, you, the manuscript, and the reader, his reading; for I don't tie the impatient reader up in the endless thread of a superfluous plot. Pull out one of the vertebrae, and the two halves of this tortuous fantasy will rejoin themselves painlessly. Chop it up into numerous fragments, and you'll find that each one can live on its own. In the hopes that some of these stumps will be lively enough to please and amuse you, I dedicate the entire serpent to you.
+  </p>
 </body>
 </html>
